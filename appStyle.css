@@ -1,0 +1,63 @@
+
+@import url("./data/Styles/LightThemeValues.css"); /* Dark Values */
+@import url("./data/Styles/DarkThemeValues.css");  /* Light Values */
+@import url("./data/Styles/StandarPosition.css");  /* Standar Position */
+/* Font from Google Font */
+@import url('https://fonts.googleapis.com/css?family=Muli|Oswald|Saira+Extra+Condensed|Squada+One|Teko|Work+Sans&display=swap');
+@import url('./data/Styles/fonts.css'); /* Fonts Values*/
+@import url("./data/Styles/topmenu.css"); /* Styel of #topmenu children */
+@import url('./data/Styles/leftmenu.css'); /* Style of #ltmenu children*/
+@import url("./data/Styles/inputArea.css"); /* Style of #inputArea children*/
+@import url("./data/Styles/toDoList.css"); /* Style of #toDolist children */
+@import url('./data/Styles/info.css'); /* Style of #info */
+@import url('./data/Styles/sitting.css'); /* Style of #sitting children*/
+
+
+#main{
+    position : fixed;
+    margin-left : 25%;
+    width: 320px;
+    height: 420px;
+    border: 1px solid black;
+    background : var(--Light_StandarBackgroundColor);
+    overflow: hidden;
+}
+
+
+#topmenu{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background: var(--Light_TopMenuBackgrounColor);
+    overflow: hidden;
+    z-index: 2;
+}
+
+#lmenu{
+    position: relative;
+    float : right;
+    width: 40px;
+    height: 100%;
+    background: var(--Light_StandarBackgroundColor);
+    overflow: hidden;
+    border-left : 2px solid var(--Light_InputBackgroundColor);
+    z-index: 1;
+}
+
+#ToDoList{
+    position: relative;
+    width : calc(100% - 40px);
+    height: calc(100% - 180px);
+    margin-top: 40px;
+    background: var(--Light_StandarBackgroundColor);
+}
+#inputArea{
+    position: relative;
+    height: calc(140px - 20px);
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-top: 10px;
+    background: var(--Light_InputBackgroundColor);
+    border-radius: 12px 0px 12px 8px;
+    
+}
