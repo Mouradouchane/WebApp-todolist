@@ -1,0 +1,13 @@
+
+html{
+    --Standar_Left : 8px;
+    --Standar_Right : 8px;
+    --Standar_Top : 4px;
+    --Standar_MarginTop : 8px;
+
+    --Standar_Raduis : 12px 0px 12px 0px;
+
+    --Standar_Transition : 0.3s;
+    --Standar_Scale : 0.9;
+    
+}

@@ -1,0 +1,51 @@
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, 
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%Cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%Unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+"Anathema Pink Normal Select.cur"
+"Anathema Pink Help Select.ani"
+"Anathema Pink Working In Background.ani"
+"Anathema Pink Busy.ani"
+"Anathema Pink Precision Select.ani"
+"Anathema Pink Text Select.ani"
+"Anathema Pink Handwriting.ani"
+"Anathema Pink Unavailable.cur"
+"Anathema Pink Vertical Resize.ani"
+"Anathema Pink Horizontal Resize.ani"
+"Anathema Pink Diagonal Resize 1.ani"
+"Anathema Pink Diagonal Resize 2.ani"
+"Anathema Pink Move.ani"
+"Anathema Pink Alternate Select.ani"
+"Anathema Pink Link Select.cur"
+
+[Strings]
+CUR_DIR        	= "Cursors\Anathema Pink"
+SCHEME_NAME    	= "Anathema Pink"
+pointer		= "Anathema Pink Normal Select.cur"
+help		= "Anathema Pink Help Select.ani"
+work		= "Anathema Pink Working In Background.ani"
+busy		= "Anathema Pink Busy.ani"
+cross		= "Anathema Pink Precision Select.ani"
+text		= "Anathema Pink Text Select.ani"
+hand		= "Anathema Pink Handwriting.ani"
+unavailiable	= "Anathema Pink Unavailable.cur"
+vert		= "Anathema Pink Vertical Resize.ani"
+horz		= "Anathema Pink Horizontal Resize.ani"
+dgn1		= "Anathema Pink Diagonal Resize 1.ani"
+dgn2		= "Anathema Pink Diagonal Resize 2.ani"
+move		= "Anathema Pink Move.ani"
+alternate	= "Anathema Pink Alternate Select.ani"
+link		= "Anathema Pink Link Select.cur"

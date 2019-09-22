@@ -1,0 +1,36 @@
+html{
+    --lmenu_AllIconsWidth : 30px;
+    --menu_AllIconsLeft : 5px;
+}
+.allLeftIcons{
+    width: var( --lmenu_AllIconsWidth );
+    transition : var(--Standar_Transition);
+    cursor: pointer;
+}
+.allLeftIcons:active{
+
+    animation: loved 0.1s 1;
+    transform: scale(var(--Standar_Scale));
+}
+
+#save{
+    position: relative;
+    margin-top: 48px;
+    margin-left : var(--menu_AllIconsLeft);
+
+} 
+
+#trash{
+    position: relative;
+    margin-top: 245px;
+    margin-left : var(--menu_AllIconsLeft);
+} 
+
+#lhr{
+        width: 80%;
+}
+
+#option{
+    position: relative;
+    margin-left : var(--menu_AllIconsLeft);
+}

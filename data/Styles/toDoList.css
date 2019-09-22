@@ -1,0 +1,137 @@
+html{
+    --toDoList_left : -28px;
+}
+
+/* Scroll WebKit */
+#LIST::-webkit-scrollbar {
+    width: 8px;
+}
+   
+#LIST::-webkit-scrollbar-thumb {
+    background: #d2c9d4;
+}
+  
+/* Scroll Chrome */
+#LIST::-ms-scrollbar {
+    width: 8px;
+}
+   
+#LIST::-ms-scrollbar-thumb {
+    background: #d2c9d4;
+}
+ 
+#LIST{
+    position : absolute;
+    margin-top : 0px;
+    width : calc(100% - 50px);
+    height: 100%;
+    overflow-y : scroll;
+
+    /* Scroll Firefox*/
+    scrollbar-color: #d2c9d4 #f2f2f2;
+    scrollbar-width: thin;
+
+}
+
+#isEmpty{
+    position: absolute;
+    width : 80px;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50% , -50%);
+}
+#isEmpty img{
+    width : 100%;
+}
+#isEmpty p{
+    margin-top : -8px;
+    font-size : 18px;
+    font-family : Tahoma;
+    font-weight: bold;
+    color : var(--Light_VoidText);
+}
+
+.todos{
+    position : relative;
+    margin-left: -40px; 
+    width: 100%;
+    margin-top: var(--Standar_MarginTop);
+    background : var(--Light_olsColor);
+    border-radius: 0px 12px 12px 0px;
+}
+
+.todos img{
+    position : relative;
+    width : 20px;
+}
+
+.todos hr{
+    position : relative;
+    left: var(--toDoList_left);
+    margin-top: -14px;
+}
+.delete{
+    float : right;
+    margin-top : 4px;
+    margin-right : 4px;
+    cursor : pointer;
+}
+
+.title{
+    position : relative;
+    font-family: var(--fonts_1);
+    font-size : 16px;
+    left : var(--toDoList_left);
+    display : inline-block;
+    margin-top: 4px;
+}
+
+.time{
+    position : relative;
+    font-family: var(--fonts_1);
+    font-size : 16px;
+    display : inline-block;
+    margin-top: -2px;
+}
+
+.description{
+    position : relative;
+    font-family : var(--fonts_description);
+    left : var(--toDoList_left);
+    margin-top: -4px;
+    font-size : 18px;
+}
+
+.isloved{
+    position : relative;
+    float : right;
+    margin-top : -40px;
+    margin-right : 4px;
+    cursor : pointer;
+}
+.isloved:active{
+    animation: loved 0.1s 1;
+}
+
+@keyframes loved{
+        0%{
+
+            transform: rotateZ(20deg);
+
+        }
+        25%{
+
+            transform: rotateZ(-20deg);
+
+        }
+        75%{
+
+            transform: rotateZ(20deg);
+
+        }
+        100%{
+
+            transform: rotateZ(-20deg);
+
+        }
+}

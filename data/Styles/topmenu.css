@@ -1,0 +1,65 @@
+   
+html{
+    --topmenu_TitleFontSize : 20px;
+    --topmenu_DescriptionFontSize : 15px;
+}
+
+#ldate{
+        position: relative;
+        margin-top : 1px;
+        margin-left : var(--Standar_Left);
+
+        font-size: var(--topmenu_TitleFontSize);
+        font-family: var(--fonts_titles);
+        color : var(--Light_TitlesColor);
+        cursor: default;
+}
+
+#ltime{
+        position: relative;
+        margin-top : -24px;
+        margin-left : var(--Standar_Left);
+        
+        font-size: var(--topmenu_DescriptionFontSize);
+        font-family: var(--fonts_description);
+        color : var(--Light_TextColor);
+        cursor: default;
+}
+
+#username{
+        position: relative;
+        float : right;
+        margin-top : -55px;
+        margin-right: 40px;
+
+        font-size: var( --topmenu_TitleFontSize );
+        font-family: var(--fonts_1);
+        color : var(--Light_white);
+        cursor: pointer;
+        transition: var(--Standar_Transition);
+}
+#username:active{
+        transform: scale(var(--Standar_Scale));
+} 
+#userPic {
+        position: relative;
+        width: 30px;
+        float : right;
+        margin-top : -53px;
+        margin-right: 3px;
+        cursor: pointer;
+        transition: var(--Standar_Transition);
+}
+
+
+#isOnline{
+        position: relative;
+        background: var(--isOnline);
+        margin-top : -53px;
+        margin-right : 24px;
+        width: 10px;
+        height: 10px;
+        border-radius: 40px;
+        float : right;
+        z-index: 1;
+}

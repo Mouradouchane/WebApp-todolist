@@ -1,0 +1,10 @@
+
+/*  Dark Theme Values in RGBA */
+
+html{
+--Dark_MenuBackgroundColor :rgba(0, 0, 0, 1); 
+--Dark_StandarBackgroundColor :rgba(44, 41, 51, 1); 
+--Dark_TextDesableColor :rgba(61, 61, 71, 1);
+--Dark_TextColor :rgba(96, 102, 120, 1);
+--Dark_TitlesColor :rgba(122, 139, 153, 1); 
+}
