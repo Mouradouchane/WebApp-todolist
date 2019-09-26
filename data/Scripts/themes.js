@@ -15,7 +15,6 @@ var [lightChoise,darkChoise] = Full_Sitting;
 var rootStyle = document.documentElement;
 
 
-
 function EnableLight(){
     //light ON
     if( lightChoise.children[1].children[0].children[0].checked == true){
