@@ -11,6 +11,8 @@ var [,topmenu,,] = mainChildes;
 var topmenuDate = topmenu.children[0];
 var topmenuLiveTime = topmenu.children[1];
 
+export {topmenuDate , topmenuLiveTime};
+
 setInterval(() => {
     var SplitDate = Date().toString().split(' ');
     var SplitTime = SplitDate[4].split(':');
@@ -21,6 +23,7 @@ setInterval(() => {
 },1000);
 
 const onlineCircle = topmenu.children[2];
+
 function isOnline(){
     if(window.navigator.onLine === true){
         onlineCircle.style.background = "var(--isOnline)";
@@ -30,4 +33,5 @@ function isOnline(){
     }
 };
 
+// checke if user is a online or not
 setInterval(isOnline,2000);

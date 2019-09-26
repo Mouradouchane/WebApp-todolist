@@ -23,8 +23,8 @@ html{
 #LIST{
     position : absolute;
     margin-top : 0px;
-    width : calc(100% - 50px);
-    height: 100%;
+    width : calc(100% - 41px);
+    height: 250px;
     overflow-y : scroll;
 
     /* Scroll Firefox*/
@@ -54,7 +54,7 @@ html{
 .todos{
     position : relative;
     margin-left: -40px; 
-    width: 100%;
+    width: 95%;
     margin-top: var(--Standar_MarginTop);
     background : var(--Light_olsColor);
     border-radius: 0px 12px 12px 0px;

@@ -2,9 +2,12 @@
 /*  Dark Theme Values in RGBA */
 
 html{
---Dark_MenuBackgroundColor :rgba(0, 0, 0, 1); 
---Dark_StandarBackgroundColor :rgba(44, 41, 51, 1); 
---Dark_TextDesableColor :rgba(61, 61, 71, 1);
---Dark_TextColor :rgba(96, 102, 120, 1);
---Dark_TitlesColor :rgba(122, 139, 153, 1); 
+    --Dark_MenuBackgroundColor : #534c4c;
+    --Dark_TopMenuBackgrounColor : #282828;
+    --Dark_StandarBackgroundColor : #534c4c;  
+    --Dark_InputBackgroundColor : #64ff64; 
+    --Dark_TextColor : rgb(41, 29, 32);  
+    --Dark_TitlesColor : #ff4d4d; 
+    --Dark_olsColor : #b9c6c5;
+    --Dark_white : white;
 }

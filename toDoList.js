@@ -2,6 +2,9 @@
 import {mainChildes} from "./data/Scripts/elems.js";
 import{ RegInputs as REG }from "./data/Scripts/RegEx.js";
 
+export {inputsPart};
+export {add_botton,input_title,input_time,descirption};
+
 var list_toDo = mainChildes[2];
 var inputsPart = mainChildes[3].children;
 const WarningInfo = document.querySelector('#info');

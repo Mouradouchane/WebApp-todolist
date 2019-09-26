@@ -2,12 +2,12 @@
     /* Color Theme Swatches in RGBA */
 
 html{
---Light_MenuBackgroundColor : rgba(242, 174, 174, 1);
+--Light_MenuBackgroundColor : #ff4d4d;
 --Light_TopMenuBackgrounColor : #73bf84;
 --Light_StandarBackgroundColor :rgba(242, 242, 242, 1);  
---Light_InputBackgroundColor : #e6b8de; 
+--Light_InputBackgroundColor : #a6dfc3; 
 --Light_TextColor : rgb(41, 29, 32);  
---Light_TitlesColor : rgb(210, 245, 145); 
+--Light_TitlesColor : rgb(255, 255, 255); 
 --Light_olsColor : #b9c6c5;
 --Light_white : white;
 --isOnline : rgb(100, 255, 100);

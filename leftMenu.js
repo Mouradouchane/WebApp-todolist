@@ -14,3 +14,5 @@ sitting.onclick = () => {
                 FullOptionContent.style.display = "none";
         }
 };
+
+export {leftMenu,save,trash,sitting};
