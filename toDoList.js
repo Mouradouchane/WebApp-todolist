@@ -15,7 +15,7 @@ const  [add_botton,input_title,input_time,descirption] = inputsPart;
 
 const LIST = document.querySelector('#LIST');
 var Likes = ["./data/Graphics/svg/heart-solid.svg","./data/Graphics/svg/heart-solid2.svg"];
-var DarkLikes = ["./data/Graphics/svg/heart-solid.svg","./data/Graphics/svg/white/White_heart-solid.svg"];
+var DarkLikes = ["./data/Graphics/svg/white/White_heart-solid2.svg","./data/Graphics/svg/white/White_heart-solid.svg"];
 
 add_botton.onclick =  () => {
 if(REG.test(input_title.value) == false || REG.test(descirption.value ) == false){
@@ -26,9 +26,9 @@ if(REG.test(input_title.value) == false || REG.test(descirption.value ) == false
         }, 6000);
 }
 else{
-        //if theme Light
-        if(Dark.checked == false){
-                       // add ol 
+        // if theme light
+        if(Dark.checked == true){
+        // add ol 
         LIST.appendChild(document.createElement('ol')).className = "todos";
         var all_ol = document.querySelectorAll('.todos');
         // target last element
@@ -36,6 +36,7 @@ else{
         // add delete img
         lol.appendChild(document.createElement('img')).className="delete";
         lol.lastElementChild.src='./data/Graphics/svg/cancel-button.svg';
+
         // add methode deleted
         lol.lastElementChild.onclick = () => {
                 lol.lastElementChild.parentElement.remove();
@@ -66,8 +67,8 @@ else{
                 Likes.reverse();
          }
         }
-
-        else if(Dark.checked == true){
+        // if theme dark
+        else if(Dark.checked == false){
                         // add ol 
         LIST.appendChild(document.createElement('ol')).className = "todos";
         var all_ol = document.querySelectorAll('.todos');
@@ -75,7 +76,7 @@ else{
         var lol = all_ol[all_ol.length -1];
         // add delete img
         lol.appendChild(document.createElement('img')).className="delete";
-        lol.lastElementChild.src='./data/Graphics/svg/white/White_Cancel.svg';
+        lol.lastElementChild.src='./data/Graphics/svg/white/White_cancel.svg';
         // add methode deleted
         lol.lastElementChild.onclick = () => {
                 lol.lastElementChild.parentElement.remove();
@@ -121,4 +122,3 @@ setInterval(() => {
                 EmptyContent.style.display = "none";
         }
 } , 10);
-
