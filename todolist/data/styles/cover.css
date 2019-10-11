@@ -1,0 +1,46 @@
+html{
+
+    --on_txt : B612;
+    --off_text: Muli;
+}
+
+app cover .sitting{
+    position : relative;
+    width: 8%;
+    float : right;
+    top: 4%;
+    right: 4%;
+    cursor : pointer;
+    transition : 0.2s;
+}
+
+app cover .sitting:active{
+    animation:  clickeffect 0.3s 1;
+    transform: scale(0.9);  
+}
+
+app cover .date{
+    position : relative;
+    top: calc(100% - 9vh);
+    left: 4%;
+    float : left;
+    font-size: 4vh;
+    font-family: var(--on_txt);
+    font-weight: bold;
+    color: white;
+    cursor : default;
+}
+@keyframes clickeffect {
+    0%{
+        transform: rotateZ(12deg);
+    }
+    25%{
+        transform: rotateZ(-22deg);
+    }
+    50%{
+        transform: rotateZ(12deg);
+    }
+    100%{
+        transform: rotateZ(-22deg);
+    }
+}
