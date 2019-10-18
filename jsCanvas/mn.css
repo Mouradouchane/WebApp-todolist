@@ -1,0 +1,16 @@
+
+body{
+    background : var(--bodyBackgroundColor);
+}
+
+p{
+    position : fixed;
+    font-size: 20vh;
+    z-index: 1;
+    font-family: tahoma;
+    font-weight: bold;
+    transform: translate(-50% , -40%);
+    top: 32%;
+    left: 50%;
+    cursor : default;
+}
