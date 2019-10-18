@@ -4,7 +4,7 @@ html{
     --off_text: Muli;
 }
 
-app cover .sitting{
+cover .sitting{
     position : relative;
     width: 8%;
     float : right;
@@ -14,12 +14,12 @@ app cover .sitting{
     transition : 0.2s;
 }
 
-app cover .sitting:active{
+cover .sitting:active{
     animation:  clickeffect 0.3s 1;
     transform: scale(0.9);  
 }
 
-app cover .date{
+ cover .date{
     position : relative;
     top: calc(100% - 9vh);
     left: 4%;

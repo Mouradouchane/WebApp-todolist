@@ -1,20 +1,81 @@
 
 #list{
     position : relative;
-    top: 0px;
+    top: 0%;
     left: 0px;
     width : 100%;
-    height: 55%;
+    height: 53%;
     display : block;
 }
+
+#list .todo{
+    position : relative;
+    width: calc(100% - 1px);
+    height : 12vh;
+    border-bottom : 1px solid rgba(51, 50, 50, 0.548);
+    overflow: hidden;
+}
+
+#list .todo .checker{
+    position : relative;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 12vh;
+    background-color : rgba(51, 50, 50, 0.548); 
+    float :left;
+    left: 8%;
+    cursor: pointer;
+}
+
+#list .todo .content{
+    position : relative;
+    left: 8%;
+    font-size: 4vh;
+    font-family: tahoma;
+    top:50%;
+    transform: translate(-0% ,-62%);
+    cursor: default;
+}
+
+#list .todo .trash{
+    position : relative;
+    top: -1vh;
+    float :right;
+    width: 4.5vh;
+    right: 4%;
+    cursor : pointer;
+    transition: 0.2s;
+}
+#list .todo .trash:active{
+animation:  clickeffect 0.3s 1;
+transform: scale(0.9);
+}
+  
+#list .todo .trash:active{
+    transform: scale(0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 #isEmpty{
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 75%;
     transform: translate(-50% , -50%);
     width: 40%;
-    height: 60%;   
+    height: 60%; 
+    border: none;
+    opacity : 0; 
 }
 #isEmpty img{
     position: relative;
@@ -25,7 +86,7 @@
 
 #isEmpty p{
     position: relative;
-    top: -4vh;
+    top: 0;
     text-align : center;
     font-size: 4vh;
     font-family: var(--off_text);
@@ -33,3 +94,4 @@
     color: rgb(128, 128, 128);
     cursor : default;
 }
+

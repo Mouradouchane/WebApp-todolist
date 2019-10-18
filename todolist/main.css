@@ -7,7 +7,12 @@
 /* importing input style */
 @import url("./data/styles/inputs.css");
 
-app{
+*{
+    padding :0 !important;
+    margin : 0 !important;
+
+}
+div{
     position: fixed;
     overflow: hidden;
     left: 50%;
@@ -19,7 +24,7 @@ app{
     border-radius: 8px;
 }
 
-app cover{
+div cover{
     display :block;
     position: relative;
     background: url("./data/graphics/cover/T_4-01.jpg");

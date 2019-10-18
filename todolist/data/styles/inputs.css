@@ -1,8 +1,9 @@
 
 #lastpart{
-    position : relative;
+    position : absolute;
     width: 100%;
     height: 10%;
+    bottom : 0%;
     border-top : 1px solid rgba(177, 175, 175, 0.781);
 }
 
