@@ -1,4 +1,4 @@
-import {fullList, fullcover} from  "./varsModuel.js";
+import {fullList} from  "./varsModuel.js";
 
 export function constructorToDo(valuetext,numb,list = fullList){
 
@@ -6,7 +6,8 @@ export function constructorToDo(valuetext,numb,list = fullList){
     this.list = list;
     this.valuetext = valuetext;
     this.trashSRC = "data/graphics/svg/garbage.svg";
-    this.arrColor = ["red","green"];
+    this.arrColor = ["rgb(255, 255, 255)","rgb(244, 87, 37)"];
+    this.arrTextCase = ["none","line-through"];
     this.printInList = function(){
       
         //append child ol
@@ -18,9 +19,10 @@ export function constructorToDo(valuetext,numb,list = fullList){
             this.list.lastElementChild.append(document.createElement("div"));
             this.list.lastElementChild.lastElementChild.setAttribute("class","light checker");
             this.list.lastElementChild.lastElementChild.onclick = () => {
-                document.querySelector(`#L${this.numb}`).children[0].style.background = this.arrColor[0];
+                document.querySelector(`#L${this.numb}`).children[0].style.background = this.arrColor[1];
                 this.arrColor.reverse();
-
+                document.querySelector(`#L${this.numb}`).children[1].style.cssText = `text-decoration : ${this.arrTextCase[1]}`;
+                this.arrTextCase.reverse();
             };
       
         //append p text content

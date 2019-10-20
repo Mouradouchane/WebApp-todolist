@@ -4,6 +4,52 @@ html{
     --off_text: Muli;
 }
 
+
+
+
+cover #ListSitting{
+    position : absolute;
+    right: 4%;
+    top: 7vh;
+    width: 24vh;
+    height: 9vh;
+    display: none;
+}
+cover ul{
+    background : rgba(165, 165, 165, 0.712);
+    border-radius: 4px;
+}
+
+cover #ListSitting ol{
+    position : relative;
+    font-family : tahoma;
+    font-weight:bold;
+    font-size: 2.5vh;
+    left: 2vh;
+    top: 2vh;
+    cursor: pointer;
+}
+
+cover ol span{
+    color: rgb(122, 44, 185);
+}
+
+cover #theme input[type=checkbox] {
+    position : relative;
+    float: right;
+    right: 4vh;
+    top: 0.4vh;
+    cursor : pointer;
+    width: 1vh;
+}
+
+
+
+
+
+
+
+
 cover .sitting{
     position : relative;
     width: 8%;
@@ -21,10 +67,10 @@ cover .sitting:active{
 
  cover .date{
     position : relative;
-    top: calc(100% - 9vh);
+    top: calc(100% - 6vh);
     left: 4%;
     float : left;
-    font-size: 4vh;
+    font-size: 3vh;
     font-family: var(--on_txt);
     font-weight: bold;
     color: white;
