@@ -15,11 +15,7 @@
         </div> 
 
         <cover> 
-            <img class="light sitting" id="Sitting" src="./data/graphics/svg/menu.svg">
-                <ul class="light" id="ListSitting">
-                    <ol class="light"> local save <span>(auto)</span> </ol>
-                    <ol class="light" id="theme"> theme <input type="checkbox" > </ol>
-                </ul>
+            <img class="light sitting" id="Sitting" src="./data/graphics/svg/reload.svg">
             <p class ="light date">Feb 14 1998 </p>
         </cover>
 
@@ -29,16 +25,19 @@
         </ul>
   
         
-            <article id="lastpart" class="light">
+        <article id="lastpart" class="light">
                 <img class="light" id="addtodo" src="data/graphics/svg/plus.svg">
                 <input class="light" id="input" type="text" placeholder="text without spaces"/>
-            </article>
+        </article>
 
         </div>
+
     <script src="./main.js" type="module"> </script>
     <script src="./data/app_logic/varsModuel.js" type="module"></script>
     <script src="./data/app_logic/dateModuel.js" type="module"></script>
     <script src="./data/app_logic/listModuel.js" type="module"></script>
     <script src="./data/app_logic/inputModuel.js" type="module"></script>
+    <!-- storage module -->
+    <script src="data/app_logic/outDB/storage.js" type="module"></script>
 </body>
 </html>

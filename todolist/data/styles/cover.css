@@ -4,9 +4,6 @@ html{
     --off_text: Muli;
 }
 
-
-
-
 cover #ListSitting{
     position : absolute;
     right: 4%;
@@ -16,9 +13,10 @@ cover #ListSitting{
     display: none;
 }
 cover ul{
-    background : rgba(165, 165, 165, 0.712);
+    background : rgba(214, 214, 214, 0.712);
     border-radius: 4px;
 }
+
 
 cover #ListSitting ol{
     position : relative;
@@ -42,13 +40,6 @@ cover #theme input[type=checkbox] {
     cursor : pointer;
     width: 1vh;
 }
-
-
-
-
-
-
-
 
 cover .sitting{
     position : relative;

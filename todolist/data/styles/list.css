@@ -83,6 +83,7 @@ transform: scale(0.9);
     height: 60%; 
     border: none;
     opacity : 0; 
+    z-index : 1;
 }
 #isEmpty img{
     position: relative;

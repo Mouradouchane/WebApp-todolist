@@ -12,6 +12,11 @@ const input = fullInput.querySelector("#input");
 const btnSendValue  = fullInput.querySelector("#addtodo");
 export {fullInput,input,btnSendValue};
 
-const SaveList = [];
 const REG = new RegExp(" +","ig");
-export {SaveList,REG};
+export {REG};
+
+const sittingBTN = fullcover.querySelector("#Sitting");
+export {sittingBTN};
+
+const list = [];
+export {list};

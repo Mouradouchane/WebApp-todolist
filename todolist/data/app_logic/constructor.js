@@ -1,10 +1,13 @@
 import {fullList} from  "./varsModuel.js";
+import {list} from "./varsModuel.js";
 
-export function constructorToDo(valuetext,numb,list = fullList){
+export function constructorToDo(valuetext,numb,doit = false,trashed = false,list = fullList){
 
     this.numb = numb;
     this.list = list;
     this.valuetext = valuetext;
+    this.doit = doit;
+    this.trashed = trashed;
     this.trashSRC = "data/graphics/svg/garbage.svg";
     this.arrColor = ["rgb(255, 255, 255)","rgb(244, 87, 37)"];
     this.arrTextCase = ["none","line-through"];
@@ -23,6 +26,8 @@ export function constructorToDo(valuetext,numb,list = fullList){
                 this.arrColor.reverse();
                 document.querySelector(`#L${this.numb}`).children[1].style.cssText = `text-decoration : ${this.arrTextCase[1]}`;
                 this.arrTextCase.reverse();
+
+                this.doit = true;
             };
       
         //append p text content
@@ -34,7 +39,10 @@ export function constructorToDo(valuetext,numb,list = fullList){
             this.list.lastElementChild.appendChild(document.createElement("img"));
             this.list.lastElementChild.lastElementChild.setAttribute("class","light trash");
             this.list.lastElementChild.lastElementChild.setAttribute("src", this.trashSRC);     
-            this.list.lastElementChild.lastElementChild.onclick = () => document.querySelector(`#L${this.numb}`).remove();
+            this.list.lastElementChild.lastElementChild.onclick = () => {
+                document.querySelector(`#L${this.numb}`).remove();
+                this.trashed = true;
+            };
     };
   
 }
