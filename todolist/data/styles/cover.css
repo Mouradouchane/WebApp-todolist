@@ -32,15 +32,6 @@ cover ol span{
     color: rgb(122, 44, 185);
 }
 
-cover #theme input[type=checkbox] {
-    position : relative;
-    float: right;
-    right: 4vh;
-    top: 0.4vh;
-    cursor : pointer;
-    width: 1vh;
-}
-
 cover .sitting{
     position : relative;
     width: 8%;
@@ -52,8 +43,7 @@ cover .sitting{
 }
 
 cover .sitting:active{
-    animation:  clickeffect 0.3s 1;
-    transform: scale(0.9);  
+    animation:  reload 0.2s 1;
 }
 
  cover .date{
@@ -79,5 +69,17 @@ cover .sitting:active{
     }
     100%{
         transform: rotateZ(-22deg);
+    }
+}
+
+@keyframes reload {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(180deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
     }
 }

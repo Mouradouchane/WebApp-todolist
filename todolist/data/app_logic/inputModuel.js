@@ -16,12 +16,11 @@ btnSendValue.addEventListener('click', function(){
         // excute printlist object & "show element in page list"
         list[nm].printInList();
 
-        // xhttp.open("POST",DBURL,true);
-        // xhttp.setRequestHeader(DBURL, "../outDB/storage.js");
-        // xhttp.send(JSON.stringify(new constructorToDo(input.value,nm,false,false)));
+        var toSTR = JSON.stringify(list[nm]);
+        
+        localStorage.setItem(`${list[nm].valuetext}`,[toSTR]);
         // increment id as nm "id objects in list"
         nm+=1;
-       
     }
 
 });
