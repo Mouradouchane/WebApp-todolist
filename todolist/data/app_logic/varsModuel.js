@@ -20,3 +20,9 @@ export {sittingBTN};
 
 const list = [];
 export {list};
+
+const click = new Audio("../data/sounds/click.mp3");
+const trash = new Audio("../data/sounds/trash.mp3");
+const notif = new Audio("../data/sounds/notifiy.mp3");
+export {click,trash,notif};
+

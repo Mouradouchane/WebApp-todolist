@@ -1,5 +1,5 @@
 import {fullList} from  "./varsModuel.js";
-import {list} from "./varsModuel.js";
+import {trash,click} from "./varsModuel.js";
 
 export function constructorToDo(valuetext,numb,doit = false,trashed = false,list = fullList){
 
@@ -61,6 +61,9 @@ export function constructorToDo(valuetext,numb,doit = false,trashed = false,list
                 this.bools.reverse();
                 ArchInLocal.bools.reverse();           
             localStorage.setItem(`${this.valuetext}`, JSON.stringify(ArchInLocal));
+
+            //click effect
+            click.play();
         }
 
         // delete method
@@ -69,6 +72,9 @@ export function constructorToDo(valuetext,numb,doit = false,trashed = false,list
             this.trashed = this.boolsTRASH[1];
             localStorage.removeItem(`${this.valuetext}`);
             this.boolsTRASH.reverse();
+
+            //trash effect
+            trash.play();
         };
     
     };

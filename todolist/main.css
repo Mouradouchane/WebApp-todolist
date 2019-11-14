@@ -1,11 +1,11 @@
-/* importing google fonts */
-@import url('https://fonts.googleapis.com/css?family=B612|Muli|Titillium+Web&display=swap');
 /* importing covert style */
 @import url("./data/styles/cover.css");
 /* importing list style */
 @import url("./data/styles/list.css");
 /* importing input style */
 @import url("./data/styles/inputs.css");
+/* importing loading style */
+@import url("./data/styles/loading.css");
 
 *{
     padding :0 !important;

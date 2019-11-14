@@ -1,7 +1,7 @@
 
 import {fullList} from "./data/app_logic/varsModuel.js";
 import {sittingBTN as reloader} from "./data/app_logic/varsModuel.js";
-
+import {trash} from "./data/app_logic/varsModuel.js";
 
 reloader.onclick = function(){
     try{
@@ -11,6 +11,7 @@ reloader.onclick = function(){
         console.exception("wrong clear because\n",error);
     }
     finally{
+        trash.play();
         localStorage.clear();
     }
 }

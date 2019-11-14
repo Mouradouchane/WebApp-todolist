@@ -1,8 +1,3 @@
-html{
-
-    --on_txt : B612;
-    --off_text: Muli;
-}
 
 cover #ListSitting{
     position : absolute;
@@ -52,7 +47,7 @@ cover .sitting:active{
     left: 4%;
     float : left;
     font-size: 3vh;
-    font-family: var(--on_txt);
+    font-family: monospace;
     font-weight: bold;
     color: white;
     cursor : default;
