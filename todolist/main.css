@@ -27,7 +27,7 @@ div{
 div cover{
     display :block;
     position: relative;
-    background: url("./data/graphics/cover/T_4-01.jpg");
+    /* background: url("./data/graphics/cover/T_4-01.jpg"); */
     background-size: cover;
     width: 100%;
     height : 35%;

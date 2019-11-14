@@ -1,5 +1,7 @@
 
 window.addEventListener("load", () => {
-    let loading = document.querySelector("#loading");
-    loading.style.cssText = "display : none";
+    setTimeout(() => {
+        let loading = document.querySelector("#loading");
+        loading.style.cssText = "display : none";
+    },500);
 });
